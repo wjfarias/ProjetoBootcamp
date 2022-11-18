@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2? family=Inter&display=swap');
 
+
+
+         :root {
+            --azul-dnc: #0c70f2;
+            --preto-dnc: #303030;
+            --cinza-dnc: #c9c9c9;
+            --font-padrao: 'Arial';
+         }
+         
         body {
             margin: 0px;
             padding: 0px;
+            background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+            background-repeat: no-repeat;
         }
 
          
@@ -13,8 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px #bababa;
-
+            border-bottom: 2px #bababa;
          }
 
          #menu {
@@ -26,16 +36,14 @@
          }
 
          #principal div a {
-
-            font-family: 'Inter';
-            font-size: 25px;
+            font-family: 'Arial';
+            font-size: 20px;
             font-weight: 600;
             color: #ffffff;
             text-decoration: none;
          }
 
-         #principal div a:hover {
-            
+         #principal div a:hover { 
             color: #cccccc;
          }
          
@@ -49,10 +57,248 @@
             border-radius: 5%;
             color: #ffffff;
 
-            font-family: 'Inter';
-            font-size: 20px;
+            font-family: 'Arial';
+            font-size: 17px;
             font-weight: 600;
             box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
             cursor: pointer;
          }
+
+         /* seção principal */
+
+         section {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
+               margin-top: 100px;
+               margin-bottom: 100px;
+         }
+
+         header{
+            color: white;
+            font-family:'Arial';
+         }
+
+         header h1 {
+            font-size: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+         }
+
+         header h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 100px;
+         }
          
+         header .invert {
+            background-color: black;
+            padding: 5px;
+         }
+
+         /* formulário */
+
+         form {
+             color: white;
+             font-size: 20px;
+             font-weight: 450;
+             font-family: arial;
+             width: 500px;
+         }
+
+         .form-group{  
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+         }
+
+         form input{
+            border-radius: 10px;
+            height: 30px;
+            border: 0px;
+            font-size: 16px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 255, 0.9);
+         }
+
+         form label {
+            margin-top: 8px;
+            margin-bottom: 8px;
+         }
+
+         form input::placeholder{
+            color: rgba(57, 57, 57, 0.5);
+         }
+
+         .checkbox-items label{
+            font-size: 20px;
+         }
+
+         .checkbox-items{
+           justify-content: space-around;
+           align-items: center;   
+         }
+
+         input[type="checkbox"]{
+            transform: scale(1);
+            align-items: inline;
+         }
+
+         input[type="submit"]{
+
+            background-color: rgba(12, 112, 242, 0.9);
+            width: 100%;
+            height: 50px;
+            border: 0px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            font-family: Arial;
+            margin-top: 35px;
+            box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+         }
+
+         /* footer */
+
+        footer{
+            width: 100%;
+            background-color: #0c70f2;
+            color: white;
+        }
+
+        footer .linha1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        footer ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        footer nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            height: 330px;
+        }
+
+        footer h5{
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            background-color: #303030;
+            border-radius: 10px;
+            padding: 0px 6px 0px 6px;
+            margin-bottom: 15px;
+        }
+
+        footer ul li{
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 20px 0px 20px 0px;
+        }
+
+        footer ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover{
+            color: #bababa;
+        }
+
+        footer .endereço{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            width: 20%;
+        }
+
+        footer .linha2{
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            margin:0px;
+            padding: 10px;
+        }
+
+        footer .linha2 a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        footer .linha2 a:first-child{
+             border-right: 3px solid white;
+        }
+
+        /* menu */
+
+ @media only screen and (max-width: 600px){
+        #principal{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        #menu{
+            flex-direction: column;
+            width: 100%;
+            padding: 0px;
+        }
+
+        #menu a{
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+        #principal button{
+            width: 100%;
+            margin: 0px;
+        }
+
+       /* section */
+       
+       section h1{
+           font-size: 25px;
+       }
+
+       section h2{
+        font-size: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
+       }
+
+       form{
+        width: 55%;
+        font-size: 20px;
+       }
+
+       #checkbox-items label{
+        font-size: 5px;
+
+       }
+ }
