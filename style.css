@@ -299,6 +299,16 @@
 
        #checkbox-items label{
         font-size: 5px;
+       }
 
+       /*footer*/
+
+       footer .linha1{
+          flex-direction: column;
+       }
+       
+       footer .endereço{
+        width: 50%;
+        margin-bottom: 20px;
        }
  }
